@@ -1,0 +1,139 @@
+/**
+ * Taifoon Design System — CSS Custom Properties
+ * "Mathematics rendered in light"
+ *
+ * Usage: import this file first, then reference --tf-* variables.
+ * Framework-agnostic: works with plain CSS, Tailwind, CSS Modules, etc.
+ *
+ * Source of truth: taifoon-io/taifoon-design-system
+ * Ported from: taifoon-next/src/styles/globals.css
+ */
+
+:root {
+  /* ═══════════════════════════════════════════════════
+     COLOR SYSTEM
+     Core palette: void black × silver intelligence × field blue × teal anomaly
+     ═══════════════════════════════════════════════════ */
+
+  /* ── Base ── */
+  --tf-black:      #000000;
+  --tf-void:       #030305;
+  --tf-white:      #FFFFFF;
+
+  /* ── Silver — primary text / UI chrome ── */
+  --tf-silver:     #E6F0F7;
+  --tf-silver-05:  rgba(230, 240, 247, 0.05);
+  --tf-silver-09:  rgba(230, 240, 247, 0.09);
+  --tf-silver-10:  rgba(230, 240, 247, 0.10);
+  --tf-silver-12:  rgba(230, 240, 247, 0.12);
+  --tf-silver-25:  rgba(230, 240, 247, 0.25);
+  --tf-silver-40:  rgba(230, 240, 247, 0.40);
+  --tf-silver-50:  rgba(230, 240, 247, 0.50);
+  --tf-silver-60:  rgba(230, 240, 247, 0.60);
+  --tf-silver-70:  rgba(230, 240, 247, 0.70);
+
+  /* ── Blue — field energy / primary accent ── */
+  --tf-blue:       #3DA5FF;
+  --tf-blue-10:    rgba(61, 165, 255, 0.10);
+  --tf-blue-20:    rgba(61, 165, 255, 0.20);
+  --tf-blue-glow:  rgba(61, 165, 255, 0.06);
+
+  /* ── Teal — anomaly signal / secondary accent ── */
+  --tf-teal:       #00B5B8;
+  --tf-teal-10:    rgba(0, 181, 184, 0.10);
+  --tf-teal-glow:  rgba(0, 181, 184, 0.08);
+
+  /* ── Volt — charged events ── */
+  --tf-volt:       #FFE44D;
+
+  /* ── Functional ── */
+  --tf-ok:         #00CC88;
+  --tf-warn:       #FFB020;
+  --tf-alert:      #FF4D4D;
+
+  /* ── ICP category accents ── */
+  --tf-icp-finance:     #3DA5FF;   /* DeFi protocols — Field Blue */
+  --tf-icp-trading:     #A78BFA;   /* Institutional & trading — Purple */
+  --tf-icp-infra:       #3DA5FF;   /* Infrastructure & data — Field Blue */
+  --tf-icp-messaging:   #3DA5FF;   /* Messaging & interop — Field Blue */
+  --tf-icp-rollups:     #3DA5FF;   /* Chains & rollups — Field Blue */
+  --tf-icp-enterprise:  #E6F0F7;   /* Enterprise — Silver */
+
+  /* ═══════════════════════════════════════════════════
+     TYPOGRAPHY
+     Inter Variable (sans), JetBrains Mono (mono)
+     ═══════════════════════════════════════════════════ */
+
+  --tf-font-sans:  'Inter Variable', 'Inter', system-ui, sans-serif;
+  --tf-font-mono:  'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+
+  --tf-tracking-normal:  0em;
+  --tf-tracking-brand:   0.02em;
+  --tf-tracking-wide:    0.08em;
+  --tf-tracking-ultra:   0.15em;
+
+  /* ── Type scale (rem) ── */
+  --tf-text-xs:   0.75rem;   /* 12px */
+  --tf-text-sm:   0.875rem;  /* 14px */
+  --tf-text-base: 1rem;      /* 16px */
+  --tf-text-lg:   1.125rem;  /* 18px */
+  --tf-text-xl:   1.25rem;   /* 20px */
+  --tf-text-2xl:  1.5rem;    /* 24px */
+  --tf-text-3xl:  1.875rem;  /* 30px */
+  --tf-text-4xl:  2.25rem;   /* 36px */
+  --tf-text-5xl:  3rem;      /* 48px */
+  --tf-text-6xl:  3.75rem;   /* 60px */
+  --tf-text-7xl:  4.5rem;    /* 72px */
+
+  /* ═══════════════════════════════════════════════════
+     SPACING
+     ═══════════════════════════════════════════════════ */
+
+  --tf-space-section:        120px;
+  --tf-space-section-mobile: 64px;
+
+  /* ═══════════════════════════════════════════════════
+     SHADOWS & GLOWS
+     ═══════════════════════════════════════════════════ */
+
+  --tf-glow-blue:   0 0 60px rgba(61, 165, 255, 0.06), 0 0 120px rgba(61, 165, 255, 0.03);
+  --tf-glow-teal:   0 0 40px rgba(0, 181, 184, 0.08), 0 0 80px rgba(0, 181, 184, 0.04);
+  --tf-glow-silver: 0 0 80px rgba(230, 240, 247, 0.04), 0 0 160px rgba(230, 240, 247, 0.02);
+
+  /* ═══════════════════════════════════════════════════
+     MOTION
+     ═══════════════════════════════════════════════════ */
+
+  --tf-ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --tf-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --tf-ease-sharp:  cubic-bezier(0.4, 0, 0.6, 1);
+
+  --tf-duration-fast:   150ms;
+  --tf-duration-normal: 300ms;
+  --tf-duration-slow:   500ms;
+
+  /* ═══════════════════════════════════════════════════
+     BORDERS & RADIUS
+     ═══════════════════════════════════════════════════ */
+
+  --tf-border-subtle:  1px solid rgba(230, 240, 247, 0.08);
+  --tf-border-dim:     1px solid rgba(230, 240, 247, 0.12);
+  --tf-border-mid:     1px solid rgba(230, 240, 247, 0.25);
+
+  --tf-radius-sm:  4px;
+  --tf-radius-md:  8px;
+  --tf-radius-lg:  12px;
+  --tf-radius-xl:  16px;
+  --tf-radius-full: 9999px;
+
+  /* ═══════════════════════════════════════════════════
+     Z-INDEX SCALE
+     ═══════════════════════════════════════════════════ */
+
+  --tf-z-base:    0;
+  --tf-z-raised:  10;
+  --tf-z-overlay: 100;
+  --tf-z-modal:   200;
+  --tf-z-toast:   300;
+  --tf-z-top:     400;
+}

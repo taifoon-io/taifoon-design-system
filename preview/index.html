@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taifoon Design System — Token Preview</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--tf-void);
+    color: var(--tf-silver);
+    font-family: var(--tf-font-sans);
+    padding: 48px;
+    line-height: 1.5;
+  }
+  h1 { font-size: var(--tf-text-2xl); letter-spacing: var(--tf-tracking-wide); margin-bottom: 8px; }
+  h2 { font-size: var(--tf-text-sm); letter-spacing: var(--tf-tracking-ultra); text-transform: uppercase;
+       color: var(--tf-silver-50); margin: 40px 0 16px; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 12px; }
+  .swatch {
+    width: 96px;
+    border-radius: var(--tf-radius-md);
+    overflow: hidden;
+    border: var(--tf-border-subtle);
+  }
+  .swatch-color { height: 64px; }
+  .swatch-label {
+    padding: 8px;
+    font-family: var(--tf-font-mono);
+    font-size: 10px;
+    color: var(--tf-silver-60);
+    background: var(--tf-silver-05);
+  }
+  .type-sample { margin: 8px 0; }
+  .mono { font-family: var(--tf-font-mono); color: var(--tf-blue); }
+  hr { border: none; border-top: var(--tf-border-subtle); margin: 40px 0; }
+</style>
+</head>
+<body>
+
+<h1>Taifoon Design System</h1>
+<p style="color: var(--tf-silver-50); font-size: var(--tf-text-sm);">Mathematics rendered in light · v1.0</p>
+
+<h2>Core Palette</h2>
+<div class="swatches">
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-void)"></div>
+    <div class="swatch-label">--tf-void<br>#030305</div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-silver)"></div>
+    <div class="swatch-label">--tf-silver<br>#E6F0F7</div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-blue)"></div>
+    <div class="swatch-label">--tf-blue<br>#3DA5FF</div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-teal)"></div>
+    <div class="swatch-label">--tf-teal<br>#00B5B8</div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-volt)"></div>
+    <div class="swatch-label">--tf-volt<br>#FFE44D</div>
+  </div>
+</div>
+
+<h2>Functional</h2>
+<div class="swatches">
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-ok)"></div>
+    <div class="swatch-label">--tf-ok<br>#00CC88</div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-warn)"></div>
+    <div class="swatch-label">--tf-warn<br>#FFB020</div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--tf-alert)"></div>
+    <div class="swatch-label">--tf-alert<br>#FF4D4D</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Typography</h2>
+<div class="type-sample" style="font-size: var(--tf-text-7xl); letter-spacing: var(--tf-tracking-brand);">Taifoon</div>
+<div class="type-sample" style="font-size: var(--tf-text-3xl); color: var(--tf-silver-70);">Cross-chain proof layer</div>
+<div class="type-sample" style="font-size: var(--tf-text-lg); letter-spacing: var(--tf-tracking-wide); text-transform: uppercase; color: var(--tf-blue);">Category Label</div>
+<div class="type-sample mono" style="font-size: var(--tf-text-sm);">0x3DA5FF → BuildersRegistry.settle(orderId, adapter, amount)</div>
+
+<hr>
+
+<h2>Motion Easing</h2>
+<div style="font-family: var(--tf-font-mono); font-size: var(--tf-text-xs); color: var(--tf-silver-50); line-height: 2;">
+  <div>--tf-ease-smooth: cubic-bezier(0.16, 1, 0.3, 1)  — entrances, panels</div>
+  <div>--tf-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1) — delights, confirmations</div>
+  <div>--tf-ease-sharp:  cubic-bezier(0.4, 0, 0.6, 1)   — exits</div>
+</div>
+
+</body>
+</html>
